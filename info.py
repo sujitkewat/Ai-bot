@@ -21,9 +21,9 @@ SESSION = environ.get('SESSION', 'the_name_is_lazydeveloper')
 # API_ID = int(environ['API_ID', '133209093016'])
 # API_HASH = environ['API_HASH', '68e791e61098766100248b0a53ae86a661a12']
 # BOT_TOKEN = environ['BOT_TOKEN', '782373999895:AAHXWFjmkjnhgY5qNYAR36eb3BDCFsGMu9jafHU68']
-API_ID = environ.get("API_ID", "25293578")
-API_HASH = environ.get("API_HASH", "f1e9ddb21ce88a8737657b16f72d47e5")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7011121680:AAEFgkoeVgHHw5s5hx1dLhBV6cC-QNKTK9c") 
+API_ID = environ.get("API_ID", "29034951")
+API_HASH = environ.get("API_HASH", "cfc8448de6746a6ccf9dc1812cf1c8f7")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7541077255:AAFYolmjmjUKRavFLTNF3MPSImc26lxX4nE") 
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -34,24 +34,24 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://ibb.co/mCpcqb8z')).split()
 
 # Admins, Channels & Users *
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5681376068 5757479875 6112523154 5792675265').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001684172926').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1328531459').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 
-AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-10018900434603').split()]
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002360843795 -1002385710854').split()]
 
 # MongoDB information *
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moneytag:micromax@cluster0.i7exq.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Letmefilterbot:Letmefilterbot@letmefilterbot.kuzj9e0.mongodb.net/?retryWrites=true&w=majority&appName=Letmefilterbot")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Letmefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'crazy_filez')
 
 # LOG CHANNELS *
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002567258685'))
-LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', '-1002567258685'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002479617411'))
+LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', '-1002479617411'))
 
 # General --- 
-ADMIN_USRNM = environ.get('ADMIN_USRNM', '') # WITHOUT @
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','') # WITHOUT @
-MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "") #[ without @ ]
+ADMIN_USRNM = environ.get('ADMIN_USRNM', 'MR_ABHAY_K') # WITHOUT @
+MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','MOVIE_MINES_UPDATE') # WITHOUT @
+MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "AK_BOTZ_UPDATE") #[ without @ ]
 
 # Others
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
@@ -99,7 +99,7 @@ CHANNEL_NAME = ""
 BACK_BTN_TXT = "◀️" # ⋞ ʙᴀᴄᴋ #currently using
 NEXT_BTN_TXT = "▶️" # ɴᴇxᴛ ⋟ #currently using
 
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1328531459').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 auth_grp = environ.get('AUTH_GROUP')
@@ -109,7 +109,7 @@ FLOOD = int(environ.get("FLOOD", "10"))
 
 # FILE RENAMING && PREMIUM ACCESS *
 LAZY_MODE = bool(environ.get("LAZY_MODE")) #make it true to enable file renaming feature in bot
-lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '5965340120 6126812037').split()]
+lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '1328531459').split()]
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [] #Add user id of the user in this field those who you want to be Authentic user for file renaming features
 
 # dont touch it 
@@ -133,20 +133,20 @@ if SELF_DELETE == "True":
     SELF_DELETE = True
 
 DISCUSSION_TITLE = "Click Here"
-DISCUSSION_CHAT_USRNM = "Discusss_Here" #without @
+DISCUSSION_CHAT_USRNM = "AK_BOTZ_SUPPORT" #without @
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/+tgPf04FXMOllMWVl"
+DOWNLOAD_TEXT_URL = "https://t.me/movie_mines_group"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/+tgPf04FXMOllMWVl"
+CAPTION_BUTTON_URL = "https://t.me/movie_mines_update"
 
 # SENSITIVE VARS
 LAZYCONTAINER = {}  #DON'T TOUCH THIS VAR !
 LOGGER = logging
-PORT = int(environ.get('PORT', 8030))
+PORT = int(environ.get('PORT', 8080))
 
 LOG_STR = "🚀Current Cusomized Configurations are:-\n"
 LOG_STR += ("𓆩ཫ⚙ཀ𓆪 IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
@@ -160,7 +160,7 @@ LOG_STR += f"𓆩ཫ⚙ཀ𓆪 Your current IMDB template is\n:  {IMDB_TEMPLATE}
 
 
 # ============= Rarely USED VARS ==========================
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+tgPf04FXMOllMWVl/186') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/movie_mines_group') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'digital-online-services.in') #Always use website url from api section 
@@ -170,7 +170,7 @@ LAZY_SHORTNER_URL = environ.get('LAZY_SHORTNER_URL', 'digital-online-services.in
 LAZY_SHORTNER_API = environ.get('LAZY_SHORTNER_API', '92fd0a4f70ac7b0d3bb773db3a36c01bc07de6c8') #Always use website url from api section 
 lazy_groups = environ.get('LAZY_GROUPS','-1002127686518')
 LAZY_GROUPS = [int(lazy_groups) for lazy_groups in lazy_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE 
-my_users = [int(my_users) if id_pattern.search(my_users) else my_users for my_users in environ.get('MY_USERS', '5965340120 6126812037').split()]
+my_users = [int(my_users) if id_pattern.search(my_users) else my_users for my_users in environ.get('MY_USERS', '1328531459').split()]
 MY_USERS = (my_users) if my_users else [] #input the id of that users who can share file in file protection mode
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
@@ -210,6 +210,7 @@ OUO_IO_API_KEY = ""
 MAX_MESSAGE_LENGTH = 4096
 PROCESS_MAX_TIMEOUT = 0
 DEF_WATER_MARK_FILE = ""
+
 
 
 
