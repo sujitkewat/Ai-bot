@@ -23,7 +23,7 @@ SESSION = environ.get('SESSION', 'the_name_is_lazydeveloper')
 # BOT_TOKEN = environ['BOT_TOKEN', '782373999895:AAHXWFjmkjnhgY5qNYAR36eb3BDCFsGMu9jafHU68']
 API_ID = environ.get("API_ID", "29034951")
 API_HASH = environ.get("API_HASH", "cfc8448de6746a6ccf9dc1812cf1c8f7")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7779989410:AAFnPuWA05MANJ21q2sMXtp53JJjrTX2oPs") 
+BOT_TOKEN = environ.get("BOT_TOKEN", "7541077255:AAGfCjHUu-TcP0676hPPEngk2Rj5ugbaql8") 
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -210,6 +210,7 @@ OUO_IO_API_KEY = ""
 MAX_MESSAGE_LENGTH = 4096
 PROCESS_MAX_TIMEOUT = 0
 DEF_WATER_MARK_FILE = ""
+
 
 
 
