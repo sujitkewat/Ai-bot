@@ -35,9 +35,9 @@ PICS = (environ.get('PICS', 'https://ibb.co/mCpcqb8z')).split()
 
 # Admins, Channels & Users *
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1328531459').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002360843795 -1002385710854').split()]
 
-AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002360843795 -1002385710854').split()]
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002327269274').split()]
 
 # MongoDB information *
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Letmefilterbot:Letmefilterbot@letmefilterbot.kuzj9e0.mongodb.net/?retryWrites=true&w=majority&appName=Letmefilterbot")
@@ -210,6 +210,7 @@ OUO_IO_API_KEY = ""
 MAX_MESSAGE_LENGTH = 4096
 PROCESS_MAX_TIMEOUT = 0
 DEF_WATER_MARK_FILE = ""
+
 
 
 
